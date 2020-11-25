@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name"
+
+        android:layout_marginTop="30dp"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/headingName"
+        android:id="@+id/nameText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <TextView
+        android:id="@+id/headingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Date"
+        app:layout_constraintTop_toBottomOf="@id/nameText"
+      android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/headingDate"
+        android:id="@+id/dateText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <TextView
+        android:id="@+id/headingCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter City"
+        app:layout_constraintTop_toBottomOf="@id/dateText"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/headingCity"
+        android:id="@+id/cityText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        tools:ignore="MissingConstraints"></EditText>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        app:layout_constraintTop_toBottomOf="@id/cityText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        tools:ignore="MissingConstraints"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
